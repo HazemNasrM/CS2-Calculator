@@ -83,7 +83,7 @@ int main() {
         else if (choice == 8) {
             cout << "Enter the range for random number generation (min max): ";
             cin >> a >> b;
-            cout << "Random number: " << getRandomNumber(a, b) << endl;
+            cout << "Random number: " << GRN(a, b) << endl;
         }
         else {
             cout << "Invalid choice! Please enter a number between 1 and 8.\n";
