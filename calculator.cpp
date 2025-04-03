@@ -1,5 +1,5 @@
-<<<<<<< HEAD
 #include"calculator.h"
+#include<iostream>
 #include<algorithm>
 using namespace std;
 
@@ -9,8 +9,16 @@ long double add(long double a, long double b) {
     return a + b;
 }
 
+long double subtract(long double a , long double b ) {
+    return (a-b);
+}
+
 long double multiply(long double a, long double b) {
     return a * b;
+}
+
+long double divide(long double a , long double b ){
+    return (a/b);
 }
 
 long long factorial_mod_INF(long long a) {
@@ -22,22 +30,7 @@ long long factorial_mod_INF(long long a) {
     return fact;
 }
 
-long long lcm(long long a, long long b) {
-    return (a*b)/__gcd(a,b);
-=======
-#include <iostream>
-#include "calculator.h"
-using namespace std;
-
-double subtract(int a , int b ) {
-    return (a-b);
-}
-
-double division(int a , int b ){
-    return (a/b);
-}
-
-int gcd (int a , int b ){
+long long gcd (long long a , long long b ){
     while (b != 0) {
         int temp = b;
         b = a % b;
@@ -46,8 +39,11 @@ int gcd (int a , int b ){
     return a;
 }
 
-int RNG(int a , int b ){
+long long lcm(long long a, long long b) {
+    return (a*b)/gcd(a,b);
+}
 
+long long RNG(long long a , long long b ){
     if ( b < a) {
         int temp = a ;
         a = b ;
@@ -55,7 +51,4 @@ int RNG(int a , int b ){
     }
 
     return ( a + rand() % (b-a+1));
-
-    return ()
->>>>>>> 965c54e (Initial commit)
 }
