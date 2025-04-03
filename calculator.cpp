@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include"calculator.h"
 #include<algorithm>
 using namespace std;
@@ -23,4 +24,38 @@ long long factorial_mod_INF(long long a) {
 
 long long lcm(long long a, long long b) {
     return (a*b)/__gcd(a,b);
+=======
+#include <iostream>
+#include "calculator.h"
+using namespace std;
+
+double subtract(int a , int b ) {
+    return (a-b);
+}
+
+double division(int a , int b ){
+    return (a/b);
+}
+
+int gcd (int a , int b ){
+    while (b != 0) {
+        int temp = b;
+        b = a % b;
+        a = temp;
+    }
+    return a;
+}
+
+int RNG(int a , int b ){
+
+    if ( b < a) {
+        int temp = a ;
+        a = b ;
+        b = temp ;  
+    }
+
+    return ( a + rand() % (b-a+1));
+
+    return ()
+>>>>>>> 965c54e (Initial commit)
 }
