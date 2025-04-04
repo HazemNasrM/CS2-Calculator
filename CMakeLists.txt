@@ -6,4 +6,4 @@ set(SOURCE_FILES
 	test.cpp
 )
 
-add_executable(trial $SOURCE_FILES$)
+add_executable(trial ${SOURCE_FILES})
